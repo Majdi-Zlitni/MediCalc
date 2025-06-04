@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import type { ChangeEvent } from "react";
 import "./App.css";
+import svnIcon from "./assets/svg.png";
 
 interface FormulaState {
   input: string; // Remains for potential future use or consistency, but unused by fixed formulas
@@ -270,7 +271,7 @@ function App() {
             >
               <strong>Result:</strong>{" "}
               <img
-                src="./src/assets/svg.png"
+                src={svnIcon} // Change this line
                 alt="SVN"
                 style={{
                   width: "16px",
