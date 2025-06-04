@@ -1,0 +1,110 @@
+.app-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.product-input-section {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.product-input-section label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.product-input-section input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.product-value-section {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+.product-value-section strong {
+  color: #007bff;
+}
+
+.formulas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.formula-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.formula-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 1.2em;
+}
+
+.formula-card .input-group {
+  margin-bottom: 10px;
+}
+
+.formula-card label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.formula-card input[type="number"],
+.formula-card input[type="text"] {
+  width: calc(100% - 16px); /* Account for padding */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formula-card input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.formula-card .result {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  font-weight: bold;
+  min-height: 20px; /* Ensure it has some height even if empty */
+}
+
+.formula-card .result.disabled {
+  background-color: #f0f0f0;
+  color: #aaa;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
