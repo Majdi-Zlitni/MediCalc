@@ -55,19 +55,25 @@ function App() {
         return (
           currentBaseVal +
           currentBaseVal * 0.19 +
-          currentBaseVal * 0.5
+          (currentBaseVal +
+            currentBaseVal * 0.19) *
+            0.5
         );
       case 1: // Formula 2: BaseValue + 19% TVA of BaseValue + 40% Added Value of BaseValue
         return (
           currentBaseVal +
           currentBaseVal * 0.19 +
-          currentBaseVal * 0.4
+          (currentBaseVal +
+            currentBaseVal * 0.19) *
+            0.4
         );
       case 2: // Formula 3: BaseValue + 7% TVA of BaseValue + 66.66% Added Value of BaseValue
         return (
           currentBaseVal +
           currentBaseVal * 0.07 +
-          currentBaseVal * (66.66 / 100)
+          (currentBaseVal +
+            currentBaseVal * 0.19) *
+            (66.66 / 100)
         );
       // Formula 4 (index 3) is disabled and will be handled by the caller.
       // Add other cases here if more dynamic formulas are needed in the future.
